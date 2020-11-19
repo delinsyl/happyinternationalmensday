@@ -4,7 +4,7 @@ This project has started to celebrate the yearly International Men's Day!
 Unfortunately, Google decided to only celebrate the International Women's Day by replacing the logo.
 
 ## Preview
-Installing this script adds a simple but effective label below the google logo.
+Installing this script exchanges the google logo by a custom holiday logo.
 
 ![preview image](preview/preview.png)
 
