@@ -67,6 +67,11 @@ function addHolidayInfo() {
 function isHomePage() {
   return window.location.pathname == "/" || window.location.pathname == "/webhp";
 }
+
+function isSearchPage() {
+  return window.location.pathname.startsWith("/search"); 
+}
+
 var today = new Date();  
 if (!isInternationalMensDay(today)){
   return;
