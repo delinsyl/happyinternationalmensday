@@ -9,7 +9,18 @@ Installing this script exchanges the google logo by a custom holiday logo.
 ![preview image](img/preview.png)
 
 ## Installation
-You'll need a browser extension such as [violentmonkey](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag) ([open source](https://github.com/violentmonkey/violentmonkey) ftw) and import the script.
+You'll need a browser extension such as [violentmonkey](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag) ([open source](https://github.com/violentmonkey/violentmonkey) ftw) and import the script.  
+For violentmonkey on Chromium it's the following steps.  
+Click on:  
+1. Violentmonkey icon in browser
+2. `Open dashboard` (cogwheel)
+3. `New` (plus)
+4. `Install from URL`
+5. Paste raw js URL: https://raw.githubusercontent.com/delinsyl/happyinternationalmensday/master/source.js
+6. Ok
+
+Enjoy!
+
 It should work for google with any top level domain.
 
 ## Special thanks
