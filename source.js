@@ -4,7 +4,7 @@
 // @grant       none
 // @version     1.0
 // @author      delinsyl
-// @description 11/19/2020, 11:58:09 AM
+// @description Exchanges google's logo to also celebrate the International Men's Day.
 // @include     https://*.google.tld/
 // ==/UserScript==
 
