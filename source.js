@@ -13,14 +13,39 @@ function isInternationalMensDay(date){
   return date.getDate() == 19 && currentMonth == 11;
 }
 
-var today = new Date();  
-
-if (isInternationalMensDay(today)){
-  const id = "lga";
-  var element = document.getElementById(id);
+function logWhenElementNotFound(element, id) {
   if (element == null) {
     console.error("[IMD]: Could not find element with id: " + id);
+    return true;
+  }
+  return false;
+}
+
+function exchangeLogo(){
+  const parentId = "lga";
+  var parentElement = document.getElementById(parentId);
+  if (logWhenElementNotFound(parentId)) {
     return;
   }
   
+  const logoId = "hplogo";
+  var logoElement = document.getElementById(logoId);
+  if (logWhenElementNotFound(logoId)) {
+    return;
+  }
+  
+  // Delete logo
+  parentElement.removeChild(parentElement.lastChild);
+  
+  var logoImg = document.createElement("img");
+  logoImg.style = "padding-top:109px;width:272px;height:101px;";
+  logoImg.alt = "Google";
+  logoImg.src = "https://media.githubusercontent.com/media/delinsyl/happyinternationalmensday/master/img/logo.png";
+  logoImg.title = "Happy International Men's Day!";
+  parentElement.appendChild(logoImg);
+}
+
+var today = new Date();  
+if (isInternationalMensDay(today)){
+  exchangeLogo();
 }
