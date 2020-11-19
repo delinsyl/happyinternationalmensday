@@ -41,8 +41,8 @@ function exchangeLogo(){
   logoImg.style = "padding-top:109px;width:272px;height:101px;";
   logoImg.alt = "Google";
   logoImg.src = "https://media.githubusercontent.com/media/delinsyl/happyinternationalmensday/master/img/logo.png";
-  logoImg.title = "Happy International Men's Day!";
   parentElement.appendChild(logoImg);
+  logoImg.title = "International Men's Day " + year;
 }
 
 var today = new Date();  
