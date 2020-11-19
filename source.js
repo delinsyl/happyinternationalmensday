@@ -21,7 +21,7 @@ function logWhenElementNotFound(element, id) {
   return false;
 }
 
-function exchangeLogo(){
+function exchangeLogo(today){
   const parentId = "lga";
   var parentElement = document.getElementById(parentId);
   if (logWhenElementNotFound(parentId)) {
@@ -37,15 +37,23 @@ function exchangeLogo(){
   // Delete logo
   parentElement.removeChild(parentElement.lastChild);
   
+  const year = today.getFullYear();
+  
+  var linkA = document.createElement("a");
+  linkA.href = "https://" + window.location.hostname + "/search?q=International+Men%27s+Day+" + year; 
   var logoImg = document.createElement("img");
   logoImg.style = "padding-top:109px;width:272px;height:101px;";
   logoImg.alt = "Google";
   logoImg.src = "https://media.githubusercontent.com/media/delinsyl/happyinternationalmensday/master/img/logo.png";
-  parentElement.appendChild(logoImg);
   logoImg.title = "International Men's Day " + year;
+  
+  linkA.appendChild(logoImg);
+  parentElement.appendChild(linkA);
 }
 
 var today = new Date();  
-if (isInternationalMensDay(today)){
-  exchangeLogo();
+if (!isInternationalMensDay(today)){
+  return;
 }
+
+exchangeLogo(today);
