@@ -51,9 +51,23 @@ function exchangeLogo(today){
   parentElement.appendChild(linkA);
 }
 
+function addHolidayInfo() {
+  const parentId = "prm";
+  var prmDiv = document.getElementById(parentId);
+  if (logWhenElementNotFound(parentId)) {
+    return;
+  }
+  
+  var infoA = document.createElement("a");
+  infoA.href = "https://www.internationalmensday.info/";
+  infoA.innerHTML = "Celebrating International Men's Day";
+  prmDiv.appendChild(infoA);
+}
+
 var today = new Date();  
 if (!isInternationalMensDay(today)){
   return;
 }
 
 exchangeLogo(today);
+addHolidayInfo(today);
