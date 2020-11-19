@@ -16,7 +16,7 @@ function isInternationalMensDay(date){
 var today = new Date();  
 
 if (isInternationalMensDay(today)){
-  var id = "lga";
+  const id = "lga";
   var element = document.getElementById(id);
   if (element == null) {
     console.error("[IMD]: Could not find element with id: " + id);
