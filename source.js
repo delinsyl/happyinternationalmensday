@@ -5,7 +5,7 @@
 // @version     1.0
 // @author      delinsyl
 // @description Exchanges google's logo to also celebrate the International Men's Day.
-// @include     https://*.google.tld/
+// @include     https://*.google.tld/*
 // ==/UserScript==
 
 function isInternationalMensDay(date){
