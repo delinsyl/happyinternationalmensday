@@ -23,8 +23,4 @@ if (isInternationalMensDay(today)){
     return;
   }
   
-  var spanGreeting = document.createElement("span");
-  spanGreeting.innerHTML = "<br><span style='font-size:125%;font-weight:bold'>"
-  + "Happy International Men's Day!</span>";
-  element.appendChild(spanGreeting);
 }
