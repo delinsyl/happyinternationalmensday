@@ -100,5 +100,11 @@ if (!isInternationalMensDay(today)){
   return;
 }
 
-exchangeLogo(today);
-addHolidayInfo(today);
+if (isHomePage()) {
+  exchangeLogo(today);
+  addHolidayInfo();
+}
+
+if (isSearchPage()) {
+  exchangeSmallLogo(today);
+}
