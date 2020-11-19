@@ -24,4 +24,4 @@ Enjoy!
 It should work for google with any top level domain.
 
 ## Special thanks
-Thank you very much, reddit user [/u/not_jainam](https://www.reddit.com/user/not_jainam/), who gave me the rights to use his beautiful logo for this public project.
+Thank you very much, reddit user [/u/not_jainam](https://www.reddit.com/user/not_jainam/), [who gave me the rights](https://www.reddit.com/r/MensRights/comments/jx3dd5/i_saw_google_didnt_change_their_homescreen_for/gcuye9r/?context=3) to use his beautiful logo for this public project.
