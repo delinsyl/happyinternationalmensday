@@ -64,6 +64,29 @@ function addHolidayInfo() {
   prmDiv.appendChild(infoA);
 }
 
+function exchangeSmallLogo(date) {
+  const logoClass = "logo";
+  var elements = document.getElementsByClassName(logoClass);
+  if (logWhenElementNotFound(logoClass) || elements.length < 1) {
+    return;
+  }
+  
+  var logoDiv = elements[0];
+  // Delete logo
+  logoDiv.removeChild(logoDiv.lastChild);
+  
+  var linkA = document.createElement("a");
+  linkA.href = "https://" + window.location.hostname; 
+  var logoImg = document.createElement("img");
+  logoImg.style = "width:92px;height:34px;";
+  logoImg.alt = "Google";
+  logoImg.src = "https://media.githubusercontent.com/media/delinsyl/happyinternationalmensday/master/img/logo.png";
+  logoImg.title = "International Men's Day " + date.getFullYear();
+  
+  linkA.appendChild(logoImg);
+  logoDiv.appendChild(linkA);
+}
+
 function isHomePage() {
   return window.location.pathname == "/" || window.location.pathname == "/webhp";
 }
